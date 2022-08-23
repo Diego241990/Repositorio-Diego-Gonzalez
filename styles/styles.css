@@ -16,67 +16,41 @@ text-decoration: none;
 }
 /* Empieza header ---------------------------------------*/
 .header {
-    display: grid;
+    display:flex;
     grid-area: header;
     background-image: url("../imagenes/goteando-limo-rosa-brillante-brillo_1441-4261.webp");
         justify-content: space-around;
             align-items: center;
+            height: auto;
+                    flex-direction: column;
 }
 .datos {
-    display: grid;
+    display:flex;
     justify-content: space-around;
     align-items: center;
-    grid-template-rows: 30px 40px 40px;
+    grid-template-rows: 20px 40px 40px;
+    height: auto;
 }
 .titulo {
-    display: grid;
+    display:flex;
+
     justify-content: space-around;
 align-items: center;
-font-family: Verdana, Geneva, Tahoma, sans-serif
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+height: auto;
+
+}
+.navSuperior{
+    width: 100%;
+    justify-content: center;
 }
 .navegacionn{
     display: flex;
     list-style: none;
-    justify-content: space-around;
-        align-items: center;
+    justify-content:center;
         font-size: larger;
         font-weight: 600;
-margin-left:  40px;
-margin-right: 40px;
-padding: 5px;
-}
-.burguer{
-    width: 25px;
-    cursor: pointer;
-    display: none;
-}
-
-.burguer img {
-    width: 100%;
-}
-
-.toggle-open.open {
-display: none;
-}
-.toggle-close {
-    display: none;
-}
-.toggle-close.close{
-    display: block;
-}
-@media (min-width: 600px) {
-
-}
-
-@media (max-width: 900px){
-    .burguer{
-    width: 25px;
-    cursor: pointer;
-    display: none;
-}
-.navegacionn{
-    display: none;
-}
+        padding: 20px;
 }
 
 /* EMPIEZA MAIN ----------------------------------------------------------------*/
@@ -192,15 +166,7 @@ display: flex;
 
 input {background-color:rgb(6, 248, 248);}
 
-table {
-    text-align: center;
-}
-.listaDePrecios{
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    text-align: center;
-}
+
 
 .linksInferior {
     display: grid;
@@ -247,6 +213,16 @@ table {
 
 /* PRECIOS -------------------------------------------*/
 
+table {
+    text-align: center;
+}
+.listaDePrecios {
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
 /* PRODUCTOS -------------------------------------------*/
 .tituloProductos{
     padding: 25px;
@@ -288,23 +264,82 @@ margin-left: 20px;
 
 /* SUCURSALES -------------------------------------------*/
 .nuestrosLocales{
-    padding-top: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+.sectionSucursales{
+flex-direction: row;
+display: block;
 }
 .titulosSucursales{
             padding-top: 25px;
-                margin-right: 20px;
-                margin-left: 20px;
                 margin-bottom: 20px;
                 line-height: 40px;
                 font-weight: 900;
                 text-align: center;
 }
+.imagenSucursales{
+    width: 600px;
+    height: 500px;
+    display: block;
+}
 .direccionSucursales{
                     text-align: center;
 }
 
+.burguer {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
 
+.burguer img {
+    width: 100%;
+}
 
+.toggle-open.open {
+    display: none;
+}
+
+.toggle-close {
+    display: none;
+}
+
+.toggle-close.close {
+    display: block;
+}
+
+@media (min-width: 600px) {}
+
+@media (max-width: 900px) {
+    .burguer {
+        width: 25px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .navegacionn {
+        display: none;
+    }
+    .imagenMain1{
+        flex-direction: column;
+    }
+    .imagenMain2{
+        flex-direction: column;
+    }
+    .imagenMain3{
+        flex-direction: column;
+    }
+    .imagenMain4{
+        flex-direction: column;
+    }
+    .imagenMain5{
+        flex-direction: column;
+    }
+    .imagenMain6{
+        flex-direction: column;
+    }
+}
 
 
 
