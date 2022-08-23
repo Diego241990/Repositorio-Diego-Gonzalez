@@ -286,30 +286,54 @@ display: block;
 .direccionSucursales{
                     text-align: center;
 }
-
-.burguer {
-    width: 25px;
-    cursor: pointer;
-    display: none;
+/*
+@media (min-width: 600px) {
+    .burguer {
+            width: 25px;
+            cursor: pointer;
+            display: none;
+        }
+    
+        .burguer img {
+            width: 100%;
+        }
+    
+        .toggle-open.open {
+            display: none;
+        }
+    
+        .toggle-close {
+            display: none;
+        }
+    
+        .toggle-close.close {
+            display: block;
+        }
+        
+                        .imagenMain1 {
+                            flex-direction: column;
+                        }
+            
+                        .imagenMain2 {
+                            flex-direction: column;
+                        }
+            
+                        .imagenMain3 {
+                            flex-direction: column;
+                        }
+            
+                        .imagenMain4 {
+                            flex-direction: column;
+                        }
+            
+                        .imagenMain5 {
+                            flex-direction: column;
+                        }
+            
+                        .imagenMain6 {
+                            flex-direction: column;
+                        }
 }
-
-.burguer img {
-    width: 100%;
-}
-
-.toggle-open.open {
-    display: none;
-}
-
-.toggle-close {
-    display: none;
-}
-
-.toggle-close.close {
-    display: block;
-}
-
-@media (min-width: 600px) {}
 
 @media (max-width: 900px) {
     .burguer {
@@ -321,24 +345,7 @@ display: block;
     .navegacionn {
         display: none;
     }
-    .imagenMain1{
-        flex-direction: column;
-    }
-    .imagenMain2{
-        flex-direction: column;
-    }
-    .imagenMain3{
-        flex-direction: column;
-    }
-    .imagenMain4{
-        flex-direction: column;
-    }
-    .imagenMain5{
-        flex-direction: column;
-    }
-    .imagenMain6{
-        flex-direction: column;
-    }
+
 }
 
 
