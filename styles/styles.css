@@ -164,7 +164,7 @@ display: flex;
                 text-align: center;
 }
 
-input {background-color:rgb(6, 248, 248);}
+
 
 
 
@@ -223,6 +223,7 @@ table {
     text-align: center;
 }
 
+
 /* PRODUCTOS -------------------------------------------*/
 .tituloProductos{
     padding: 25px;
@@ -239,6 +240,9 @@ table {
 
 /* REGISTRARSE -------------------------------------------*/
 
+input {
+    background-color: rgb(6, 248, 248);
+}
 .formulario {
 padding: 25px;
 margin: 25px;
