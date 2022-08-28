@@ -211,6 +211,138 @@ display: flex;
     margin: 10px;
 }
 
+.textoBrownie{
+    animation-duration: 5s;
+        animation-name: aparecer;
+        animation-iteration-count:infinite;
+                animation-timing-function: ease;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+.textoLemonPie {
+    animation-duration: 6s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.textoCheesecake {
+    animation-duration: 7s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.textoPastafrola {
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.textoTortaVelvet {
+    animation-duration: 9s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.textoMilhojas {
+    animation-duration: 10s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.textoCarrot {
+    animation-duration: 11s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.textoBalcarce {
+    animation-duration: 12s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* PRECIOS -------------------------------------------*/
 
 table {
@@ -291,4 +423,58 @@ display: block;
                     text-align: center;
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width:768px) and (max-width:1239px){
+    .gridContainer {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main"
+            "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 1fr auto 400px;
+        background-color: greenyellow;
+    }
+        header {
+            grid-area: header;
+            display: flex;
+        }
+    
+        footer {
+            grid-area: footer;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+
+}
+
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            .gridContainer {
+                display: grid;
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "footer";
+                grid-template-columns: 100%;
+                grid-template-rows: 100px 1fr auto 400px auto;
+                background-color: yellow;
+            }
+                header {
+                    grid-area: header;
+                    display: flex;
+                }
+        
+                header img {
+                    padding: 10px;
+                }
+        
+
+        
+                footer {
+                    grid-area: footer;
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 20px;
+                }
+
+        }
