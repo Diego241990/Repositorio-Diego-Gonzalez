@@ -1,0 +1,28 @@
+.main {
+    display: grid;
+    grid-area: main;
+    background-image: url("../imagenes/fondoPasteleria.jpg");
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+}
+
+.logo {
+    animation: mymove 1s infinite;
+    text-align: center;
+    height: 300px;
+    transition: height 2s;
+    }
+    &:hover {
+    height: 400px;
+    }
+
+#parrafoLogo {
+    text-align: center;
+    line-height: 30px;
+}

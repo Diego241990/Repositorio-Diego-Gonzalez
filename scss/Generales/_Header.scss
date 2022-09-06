@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    grid-area: header;
+    background-image: url("../imagenes/goteando-limo-rosa-brillante-brillo_1441-4261.webp");
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-rows: 20px 40px 40px;
+    height: auto;
+}
+
+.titulo {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+
+}
+
+.navSuperior {
+    width: 100%;
+    justify-content: center;
+}
+
+.navegacionn {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 600;
+    padding: 20px;
+}
